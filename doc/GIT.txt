@@ -1,0 +1,735 @@
+0. GIT 관련 한글 책자
+- https://git-scm.com/book/ko/v2
+- 회원 가입: https://github.com/
+
+0-1. GITHub README.md 파일 작성법
+- https://github.com/ByungJun25/Wiki/edit/master/Markdown/Example.md
+
+1. GIT 특징
+1) 분산형 버전 관리 도구
+ - brach를 따서 별도로 저장소를 관리하는 것과 비슷 
+
+2. GIT 설치
+1) http://git-scm.com/ 방문
+2) "Download for Window" 클릭
+3) 설치시, "Use Visual Studio Code as Git's default editor" 선택
+4) Visual Studio Code 설치
+5) GIT 설치 진행
+6) 설치 후, 기본적으로 "Git Bash"를 사용한다. -> 나중에 Visual Studio code와도 연동
+7) Git Bash 실행 후,
+  - > git --version // git version 확인
+8) Source Tree라는 GUI Tool도 존재함
+
+3. 로컬 저장소 생성하기
+1) 생성할 디렉토리로 이동
+2) "D:\Workspace\TestGit"에서 마우스 오른쪽 버튼을 이용해서 Visual Studio Code를 연다.
+3) Visual Studio Code에서 터미널을 열고, "Git Bash"를 선택.
+4) bash>git init // 로컬 저장소 생성
+5) D:\Workspace\TestGit\.git 디렉토리 생성됨
+
+4. Git 실습 사례
+1) git 명령어 사용법 보기
+$git
+
+2) 로컬 저장소 생성 - 생성할 디렉토리에서, 아래 명령 수행
+$git init
+
+3) username과 email 등록
+$git config --global user.name "KyuSahm"
+$git config --global user.email "gusami32@gmail.com"
+
+4) username과 email 확인
+$git config --global user.name
+$git config --global user.email
+   
+5) 현재 상태 확인 - 추가할 파일 또는 디렉토리 확인, 변경된 파일 확인
+$git status
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cat.txt
+        mouse
+
+6) 파일들을 저장소에 추가
+$git help add         // add 명령어에 대한 help
+$git add mouse      // mouse 파일 새로 add하거나 mouse 파일이 변경된 경우에도 add
+$git add -A            // 새로운 파일 추가 또는 변경된 파일을 추가
+$git status             // check status
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   cat.txt
+        new file:   mouse
+
+$git commit -m "First Commit"
+[master (root-commit) 7d7b882] First Commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 cat.txt
+ create mode 100644 mouse
+
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+7) 파일들을 삭제, 수정 추가 후 반영
+- cat.txt 삭제, mouse 내용 변경, penguin 파일 생성 후 작업
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)      
+        deleted:    cat.txt
+        modified:   mouse
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        penguin
+
+$ git add -A
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    cat.txt
+        modified:   mouse
+        new file:   penguin
+
+$ git commit -m "Second Commit"
+[master be2ff22] Second Commit
+ 3 files changed, 2 insertions(+), 2 deletions(-)
+ delete mode 100644 cat.txt
+ create mode 100644 penguin        
+
+8) git add 파일을 취소하기
+git reset <file>
+git reset => cancel all added files
+
+8. 히스토리 추적
+$ git log
+commit be2ff22a6dd7a56fe47e223fbfd5627af60a35c3 (HEAD -> master)
+Author: KyuSahm Kim <gusami32@gmail.com>
+Date:   Mon Jul 19 16:00:04 2021 +0900
+
+    Second Commit
+
+commit 7d7b8825d5d14ae460f8a6357d7c5a9495684705
+Author: KyuSahm Kim <gusami32@gmail.com>
+Date:   Mon Jul 19 15:50:19 2021 +0900
+
+    First Commit
+
+$ git log -p    // --> 수정된 파일 목록과 수정 내용을 모두 보고 싶은 경우
+$ git log -p -1 // --> 최근 리비전의 수정된 파일 목록과 수정 내용을 모두 보고 싶은 경우
+$ git log -p -2 // --> 최근 두 개의 리비전의 수정된 파일 목록과 수정 내용을 모두 보고 싶은 경우
+
+9. 특정 리비전의 세부 사항 보기
+$ git show 7d7b8825d5d14ae460f8a6357d7c5a9495684705
+commit 7d7b8825d5d14ae460f8a6357d7c5a9495684705
+Author: KyuSahm Kim <gusami32@gmail.com>
+Date:   Mon Jul 19 15:50:19 2021 +0900
+
+    First Commit
+
+diff --git a/cat.txt b/cat.txt
+new file mode 100644
+index 0000000..1d33226
+--- /dev/null
++++ b/cat.txt
+@@ -0,0 +1 @@
++name : tom
+\ No newline at end of file
+diff --git a/mouse b/mouse
+new file mode 100644
+index 0000000..4591066
+--- /dev/null
++++ b/mouse
+@@ -0,0 +1 @@
++name : jerry
+\ No newline at end of file
+
+10. 과거로 돌아가기
+1) 특정 시점으로 돌아가고, 그 이후의 행적 지우기(복구 불가능) 
+$ git reset 7d7b8825d5d14ae460f8a6357d7c5a9495684705 --hard // commit없이 바로 돌아감
+HEAD is now at 7d7b882 First Commit
+
+2) 특정 revision 되돌리기
+$ git revert 757d126d4eb38ef230d0607b847e39fcd3530378
+- VI Editor가 뜨면 commit message를 수정 후, ":wq"를 누르면 commit됨
+
+11. Branch 만들기
+1) 현재의 master branch를 clone해서 TestGit_Clone폴더에  또다른 master branch 생성
+$ git clone . /d/Workspace/TestGit_Clone/
+
+2) TestGit_Branch 생성 및 삭제
+$ cd /d/Workspace/TestGit_Clone
+$ git branch TestGit_Branch      // branch 생성
+$ git branch -d TestGit_Branch   // branch 삭제
+$ git push -d origin TestGit_Branch2 // 원격 저장소의 branch 제거. "origin"의 이름을 가진 원격 저장소의 "TestGit_Branch2" 제거
+
+2) 현재의 Branch 정보
+$ git branch
+  TestGit_Branch
+* master             // master branch임
+
+3) master branch에서 TestGit_Branch로 브랜치 변경
+$ git checkout TestGit_Branch
+Switched to branch 'TestGit_Branch'
+
+4) 브랜치의 생성과 변경을 동시에 하기
+$ git checkout -b TestGit_Branch2 => "git branch TestGit_Branch" + "git checkout TestGit_Branch2"
+Switched to a new branch 'TestGit_Branch2'
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit_Clone (TestGit_Branch)   
+$ git log
+commit 03214a30a0edd3411676ed9605d6f9606d280697 (HEAD -> TestGit_Branch, origin/master, origin/TestGit_Branch, origin/HEAD, master)
+Author: KyuSahm Kim <gusami32@gmail.com>
+Date:   Mon Jul 19 18:31:11 2021 +0900
+
+    Fourth Commit
+
+commit 757d126d4eb38ef230d0607b847e39fcd3530378
+Author: KyuSahm Kim <gusami32@gmail.com>
+Date:   Mon Jul 19 18:30:01 2021 +0900
+
+    Third Commit
+
+commit 7d7b8825d5d14ae460f8a6357d7c5a9495684705
+Author: KyuSahm Kim <gusami32@gmail.com>
+Date:   Mon Jul 19 15:50:19 2021 +0900
+
+    First Commit
+
+4) 브랜치에서 작업
+$ git status
+On branch TestGit_Branch
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)      
+        deleted:    cat.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dinosaur
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit_Clone (TestGit_Branch)   
+$ git add -A
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit_Clone (TestGit_Branch)   
+$ git commit -m "dinasour added"
+[TestGit_Branch 68e0081] dinasour added
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ delete mode 100644 cat.txt
+ create mode 100644 dinosaur
+
+5) TestGit_Branch branch에서 master branch로 변경
+$ git checkout master // option 1: master로 다시 변경
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'
+
+$ cd /d/Workspace/TestGit // option 2: master를 사용하는 폴더로 이동
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git branch
+* master
+
+12. Branch Merge하기
+$ cd /d/Workspace/TestGit_Clone/
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+$ git merge TestGit_Branch    // merge TestGit_Branch changesets to master branch
+Updating 03214a3..68e0081
+Fast-forward
+ cat.txt  | 1 -
+ dinosaur | 1 +
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ delete mode 100644 cat.txt
+ create mode 100644 dinosaur
+
+
+$ git log --graph --all --decorate // 두 branch들에서의 작업을 한눈에 보기
+* commit 68e0081b35ff1ca40ef7db19b9ccd0ae1b099b4d (HEAD -> master, TestGit_Branch)
+| Author: KyuSahm Kim <gusami32@gmail.com>
+| Date:   Mon Jul 19 19:02:26 2021 +0900
+|
+|     dinasour added
+|
+* commit 03214a30a0edd3411676ed9605d6f9606d280697 (origin/master, origin/TestGit_Branch, origin/HEAD)
+| Author: KyuSahm Kim <gusami32@gmail.com>
+| Date:   Mon Jul 19 18:31:11 2021 +0900
+|
+|     Fourth Commit
+|
+* commit 757d126d4eb38ef230d0607b847e39fcd3530378
+| Author: KyuSahm Kim <gusami32@gmail.com>
+| Date:   Mon Jul 19 18:30:01 2021 +0900
+|
+|     Third Commit
+|
+* commit 7d7b8825d5d14ae460f8a6357d7c5a9495684705
+  Author: KyuSahm Kim <gusami32@gmail.com>
+  Date:   Mon Jul 19 15:50:19 2021 +0900
+
+      First Commit 
+
+13. Conflict 해결하기(다른 branch에서 동일한 파일을 고친 후, Merge하기)      
+1) master branch에서 dinasour파일 변경
+$ git status
+$ git add -A  // 파일 변경 후에도 add 명령을 수행해야 함.
+$ git commit -m "dinasaur modi"
+[master 9d5fb1a] dinasaur modi
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+2) TestGit_Branch branch에서 dinasour파일 변경
+$ git checkout TestGit_Branch
+$ git status
+$ git add -A
+$ git commit -m "dinasour sound"
+[TestGit_Branch 7f3fceb] dinasour sound
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+3) master 브랜치로 돌아와서 merge 수행(충돌 발생)
+$ git checkout master
+$ git merge TestGit_Branch
+Auto-merging dinosaur
+CONFLICT (content): Merge conflict in dinosaur
+Automatic merge failed; fix conflicts and then commit the result 
+$ 팝업된 편집기 화면에서 충돌을 해소한 후, 저장
+$ git add -A
+$ git commit -m "merged branch"
+
+14. Rebase하기(Reapply commits on top of another base tip)
+$ git rebase TestGit_Branch // TestGit_Branch의 내용을 가져오기
+
+15. Local의 수정을 취소하기
+$ git checkout -- dinosaur // 수정된 dinosaur파일을 원래대로 되돌림.
+
+16. Local의 수정된 파일의 내용 확인하기
+$ git diff src/main/webapp/WEB-INF/web.xml
+
+17. 파일을 Repository에서 관리하지 않도록 하기
+$ git rm --cached .settings/* // .settings아래의 모드파일 제거
+$ git rm --cached *.class
+$ git rm --cached target/m2e-wtp/web-resources/META-INF/maven/com.newlecture/webprj/pom.properties
+
+18. Github에서 Repository 생성
+1) "https://github.com/"에 로그인 후, 화면 왼쪽에 위치한 "Create repository" 클릭
+2) "Repository name"을 입력 => "github-pratice"를 테스트로 입력
+3) "Description (optional)"을 입력 => "GitHub 사용 연습"이라고, 입력
+4) "public" or "private" 중에 선택
+   public => 모든 사용자에게 소스 코드 공개
+   private => 소스 코드 비공개. 나 그리고 내가 이 Repository에 초대한 사용자들한테만 공개
+5) "Initialize this repository with"은 로컬에 repository를 사용하고 있지 않다가, GitHub상에서 만드는 경우에만 사용.
+6) "Create Repository" 버튼을 이용해서 생성
+7) 다음화면에서 아래의 접속 정보를 확인 가능
+   https => https://github.com/KyuSahm/github-pratice.git
+   ssh => git@github.com:KyuSahm/github-pratice.git
+
+19. GitHub와 연동하기
+1) Local에서 master branch의 상태 정보 확인
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+2) 연결된 Remote Repository(GitHub) 확인
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git remote => 연결안됨.
+
+3) 원격 저장소 생성 후, 로컬 저장소의 변경 내용들을 로드하기
+$ git remote add origin https://github.com/KyuSahm/github-pratice.git => 원격 저장소 "https://github.com/KyuSahm/github-pratice.git"를 "origin"으로 사용하겠다는 표시
+$ git branch -M main => 로컬의 현재 branch를 main 브랜치로 이름 변경
+$ git push -u origin main => 로컬 폴더의 변경 내용들을 원격 "origin"의 main branch에 push하겠다는 표시
+info: please complete authentication in your browser...
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (10/10), 754 bytes | 377.00 KiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/KyuSahm/github-pratice.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'master' from 'origin'.
+
+$ git remote => "origin"과 연결 확인
+origin
+
+cf) $ git remote remove origin => 원격 저장소 제거
+
+4) 로컬 변경 후, GitHub에 Push하기 - 로컬에 dog.txt 생성해서 텍스트 입력
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dog.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git add -A  => 로컬에 변경 추가
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git commit -m "dog.txt added" => 로컬에 커밋 처리
+[master d80ae2b] dog.txt added 
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dog.txt    
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git push origin master => GitHub에 동기화. GitHub에서 변경내용 확인 가능
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KyuSahm/github-pratice.git
+   03214a3..d80ae2b  master -> master
+
+20. ".gitignore" 파일 사용하기
+1) 상세한 내용은 아래 페이지에서 확인
+https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+
+2) "secrete-animal.txt"파일과 ".gitignore" 파일 생성
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        secrete-animal.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+3) ".gitignore" 파일에 "secrete-animal.txt" 내용 추가 후, 로컬 커밋 및 GitHub에 Push
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git add -A
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git commit -m "add .gitignore file"
+[master 1b0f322] add .gitignore file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KyuSahm/github-pratice.git
+   d80ae2b..1b0f322  master -> master
+
+21. Private Remote Repository에서 사용자 초대하기
+- 해당 Repository 선택 > Setting 메뉴 선택 > Collaborators 메뉴 선택 > Add collaborator
+
+22. GitHub의 Remote Repository를 Clone해서 본인의 로컬 저장소에서 작업하기
+1) GitHub의 Remote Repository의 "Code" 버튼을 클릭해서 URL을 복사해 옴
+2) 로컬의 새로운 디렉토리("D:\Workspace\MyPractice")를 생성한 후, 그 아래에서 Git Bash를 열고 아래의 명령어 삽입
+$ git clone https://github.com/KyuSahm/github-pratice.git
+Cloning into 'github-pratice'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 16 (delta 3), reused 15 (delta 2), pack-reused 0
+Receiving objects: 100% (16/16), done.
+Resolving deltas: 100% (3/3), done
+
+3) 폴더 이동
+$ cd github-pratice/ => 폴더 이동
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
+
+4) 현재까지의 변경 확인
+$ git log => 현재까지의 변경 내용 확인
+commit 1b0f3223d4294d1d6c57338dae00cd2ffca9c532 (HEAD -> master, origin/master, origin/HEAD)
+Author: KyuSahm <gusami32@gmail.com>
+Date:   Tue Aug 3 15:49:00 2021 +0900
+
+    add .gitignore file
+
+commit d80ae2b874fef856c8830f79601ce0aa2490f680
+Author: KyuSahm <gusami32@gmail.com>
+Date:   Tue Aug 3 15:41:23 2021 +0900
+
+    dog.txt added
+
+commit 03214a30a0edd3411676ed9605d6f9606d280697
+Author: KyuSahm Kim <gusami32@gmail.com>
+Date:   Mon Jul 19 18:31:11 2021 +0900
+
+    Fourth Commit
+
+commit 757d126d4eb38ef230d0607b847e39fcd3530378
+Author: KyuSahm Kim <gusami32@gmail.com>
+Date:   Mon Jul 19 18:30:01 2021 +0900
+
+    Third Commit
+
+commit 7d7b8825d5d14ae460f8a6357d7c5a9495684705
+Author: KyuSahm Kim <gusami32@gmail.com>
+
+5) 새로운 파일("human.txt")를 추가한 후, 로컬 커밋 후, GitHub에 Push
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        human.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
+$ git add -A
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
+$ git commit -m "human.txt added"
+[master def1189] human.txt added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 human.txt
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
+$ git push origin master => GitHub에서 확인 가능
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 274 bytes | 274.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KyuSahm/github-pratice.git
+   1b0f322..def1189  master -> master
+
+23. GitHub의 최신내용을 가져오기
+1) fetch 명령을 통해 GitHub의 최신 상태 정보 가져오기
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git fetch
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 254 bytes | 28.00 KiB/s, done.
+From https://github.com/KyuSahm/github-pratice
+   1b0f322..def1189  master     -> origin/master
+
+2) 로컬과 GitHub와의 상태 비교
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded. => 현재 서버 보다 한개의 commit가 뒤쳐졌다는 정보
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+
+3) GitHub의 최신 파일 가져오기
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git pull origin master
+From https://github.com/KyuSahm/github-pratice
+ * branch            master     -> FETCH_HEAD
+Updating 1b0f322..def1189
+Fast-forward
+ human.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 human.txt
+
+24. 브랜치 내용 주고 받기
+1) 브랜치의 생성과 변경을 동시에 하기
+$ git checkout -b TestGit_Branch2 => "git branch TestGit_Branch" + "git checkout TestGit_Branch2"
+Switched to a new branch 'TestGit_Branch2'
+
+2) "TestGit_Branch2" 브랜치에서 "tiger"파일 삭제하고, "dinosaur.txt" 파일 추가
+$ git status
+On branch TestGit_Branch2
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    tiger
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dinosaur.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (TestGit_Branch2)
+$ git add -A
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (TestGit_Branch2)
+$ git commit -m "tiger removed and dinosaur added"
+[TestGit_Branch2 a5f14c6] tiger removed and dinosaur added
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 dinosaur.txt
+ delete mode 100644 tiger
+
+3) GitHub에 브랜치 생성하기
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (TestGit_Branch2)
+$ git branch => 현재의 로컬 branch 정보
+* TestGit_Branch2
+  master
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (TestGit_Branch2)
+$ git push origin TestGit_Branch2 => GitHub에 "TestGit_Branch2" 브랜치 생성. GitHub에서 여러 브랜치 중 하나를 선택 가능
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 292 bytes | 292.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'TestGit_Branch2' on GitHub by visiting:
+remote:      https://github.com/KyuSahm/github-pratice/pull/new/TestGit_Branch2
+remote:
+To https://github.com/KyuSahm/github-pratice.git
+ * [new branch]      TestGit_Branch2 -> TestGit_Branch2
+
+4) 로컬과 원격의 모든 Branch 정보 보기
+$ git branch -a
+* TestGit_Branch2
+  master
+  remotes/origin/TestGit_Branch2
+  remotes/origin/master
+
+5) 원격(GitHub)의 Branch를 가져와서 로컬에 Branch 생성 후, 전환 하기
+$ git branch => 로컬 브랜치 정보 확인
+* master
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
+$ git checkout -b TestGit_Branch3 remotes/origin/TestGit_Branch2  => 원격의 "remotes/origin/TestGit_Branch2"를 가져와서 로컬 브랜치 "TestGit_Branch3" 생성 후, 변경
+Switched to a new branch 'TestGit_Branch3'
+Branch 'TestGit_Branch3' set up to track remote branch 'TestGit_Branch2' from 'origin'.
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (TestGit_Branch3)
+$ git branch
+* TestGit_Branch3
+  master
+
+25. 충돌(Conflict) 해결하기
+1) Machine A에서 master branch의 "cat.txt" 파일 수정 후, 원격에 Push
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   cat.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git add -A
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git commit -m "cat name changed"
+[master 7e22f28] cat name changed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 276 bytes | 276.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KyuSahm/github-pratice.git
+   def1189..7e22f28  master -> master
+
+2) Machine B에서 최신 내용을 Pull하지 않고, master branch의 "cat.txt" 파일 수정 후, 원격에 Push시도
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   cat.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
+$ git add -A
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
+$ git commit -m "cat name changed by another man"
+[master 1f6ec9f] cat name changed by another man
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
+$ git push origin master => 충돌에 의해서 Push가 되지 않음.
+To https://github.com/KyuSahm/github-pratice.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/KyuSahm/github-pratice.git'    
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+3) Machine B에서 최신 내용을 Pull하면 충돌 해결을 위해 Editor 창이 뜸.
+$ git pull => 편집기에서 conflict 소스 해결
+Auto-merging cat.txt
+CONFLICT (content): Merge conflict in cat.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master|MERGING) 
+$ git add -A
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master|MERGING) 
+$ git commit => 메세지 없이 입력하면 자동으로 충돌과 관련된 메시지들이 뜬다. wq를 이용해서 저장하면 Commit됨.
+[master 5df7a47] Merge branch 'master' of https://github.com/KyuSahm/github-pratice
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
+$ git push => 원격에 Push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 752 bytes | 752.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/KyuSahm/github-pratice.git
+   7e22f28..5df7a47  master -> master
+
+26. 원격 브랜치 제거
+$ git branch -a => 로컬 및 원격 브랜치 정보
+  TestGit_Branch2
+* master
+  remotes/origin/TestGit_Branch2
+  remotes/origin/master
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git push -d origin TestGit_Branch2 => "origin"의 이름을 가진 원격 저장소의 "TestGit_Branch2" 제거
+To https://github.com/KyuSahm/github-pratice.git
+ - [deleted]         TestGit_Branch2
+
+gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
+$ git branch -a
+  TestGit_Branch2
+* master
+  remotes/origin/master
+
+27. Git Commit 메시지 작성법
+1) Google에서 "Git Commit 메시지 작성법"을 검색
+2) 참고 사이트: https://beomseok95.tistory.com/328
+
+28. Git Remote and Local Branch Renaming
+1) GitHub의 해당 Repository > Setting > Branches > 수정버튼
+2) Local의 경우 => $ git branch -M main => 로컬의 현재 branch를 main 브랜치로 이름 변경
