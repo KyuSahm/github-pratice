@@ -1,58 +1,58 @@
-0. GIT °ü·Ã ÇÑ±Û Ã¥ÀÚ
+0. GIT ê´€ë ¨ í•œê¸€ ì±…ì
 - https://git-scm.com/book/ko/v2
-- È¸¿ø °¡ÀÔ: https://github.com/
+- íšŒì› ê°€ì…: https://github.com/
 
-0-1. GITHub README.md ÆÄÀÏ ÀÛ¼º¹ı
+0-1. GITHub README.md íŒŒì¼ ì‘ì„±ë²•
 - https://github.com/ByungJun25/Wiki/edit/master/Markdown/Example.md
 
-1. GIT Æ¯Â¡
-1) ºĞ»êÇü ¹öÀü °ü¸® µµ±¸
- - brach¸¦ µû¼­ º°µµ·Î ÀúÀå¼Ò¸¦ °ü¸®ÇÏ´Â °Í°ú ºñ½Á 
+1. GIT íŠ¹ì§•
+1) ë¶„ì‚°í˜• ë²„ì „ ê´€ë¦¬ ë„êµ¬
+ - brachë¥¼ ë”°ì„œ ë³„ë„ë¡œ ì €ì¥ì†Œë¥¼ ê´€ë¦¬í•˜ëŠ” ê²ƒê³¼ ë¹„ìŠ· 
 
-2. GIT ¼³Ä¡
-1) http://git-scm.com/ ¹æ¹®
-2) "Download for Window" Å¬¸¯
-3) ¼³Ä¡½Ã, "Use Visual Studio Code as Git's default editor" ¼±ÅÃ
-4) Visual Studio Code ¼³Ä¡
-5) GIT ¼³Ä¡ ÁøÇà
-6) ¼³Ä¡ ÈÄ, ±âº»ÀûÀ¸·Î "Git Bash"¸¦ »ç¿ëÇÑ´Ù. -> ³ªÁß¿¡ Visual Studio code¿Íµµ ¿¬µ¿
-7) Git Bash ½ÇÇà ÈÄ,
-  - > git --version // git version È®ÀÎ
-8) Source Tree¶ó´Â GUI Toolµµ Á¸ÀçÇÔ
+2. GIT ì„¤ì¹˜
+1) http://git-scm.com/ ë°©ë¬¸
+2) "Download for Window" í´ë¦­
+3) ì„¤ì¹˜ì‹œ, "Use Visual Studio Code as Git's default editor" ì„ íƒ
+4) Visual Studio Code ì„¤ì¹˜
+5) GIT ì„¤ì¹˜ ì§„í–‰
+6) ì„¤ì¹˜ í›„, ê¸°ë³¸ì ìœ¼ë¡œ "Git Bash"ë¥¼ ì‚¬ìš©í•œë‹¤. -> ë‚˜ì¤‘ì— Visual Studio codeì™€ë„ ì—°ë™
+7) Git Bash ì‹¤í–‰ í›„,
+  - > git --version // git version í™•ì¸
+8) Source Treeë¼ëŠ” GUI Toolë„ ì¡´ì¬í•¨
 
-3. ·ÎÄÃ ÀúÀå¼Ò »ı¼ºÇÏ±â
-1) »ı¼ºÇÒ µğ·ºÅä¸®·Î ÀÌµ¿
-2) "D:\Workspace\TestGit"¿¡¼­ ¸¶¿ì½º ¿À¸¥ÂÊ ¹öÆ°À» ÀÌ¿ëÇØ¼­ Visual Studio Code¸¦ ¿¬´Ù.
-3) Visual Studio Code¿¡¼­ ÅÍ¹Ì³ÎÀ» ¿­°í, "Git Bash"¸¦ ¼±ÅÃ.
-4) bash>git init // ·ÎÄÃ ÀúÀå¼Ò »ı¼º
-5) D:\Workspace\TestGit\.git µğ·ºÅä¸® »ı¼ºµÊ
+3. ë¡œì»¬ ì €ì¥ì†Œ ìƒì„±í•˜ê¸°
+1) ìƒì„±í•  ë””ë ‰í† ë¦¬ë¡œ ì´ë™
+2) "D:\Workspace\TestGit"ì—ì„œ ë§ˆìš°ìŠ¤ ì˜¤ë¥¸ìª½ ë²„íŠ¼ì„ ì´ìš©í•´ì„œ Visual Studio Codeë¥¼ ì—°ë‹¤.
+3) Visual Studio Codeì—ì„œ í„°ë¯¸ë„ì„ ì—´ê³ , "Git Bash"ë¥¼ ì„ íƒ.
+4) bash>git init // ë¡œì»¬ ì €ì¥ì†Œ ìƒì„±
+5) D:\Workspace\TestGit\.git ë””ë ‰í† ë¦¬ ìƒì„±ë¨
 
-4. Git ½Ç½À »ç·Ê
-1) git ¸í·É¾î »ç¿ë¹ı º¸±â
+4. Git ì‹¤ìŠµ ì‚¬ë¡€
+1) git ëª…ë ¹ì–´ ì‚¬ìš©ë²• ë³´ê¸°
 $git
 
-2) ·ÎÄÃ ÀúÀå¼Ò »ı¼º - »ı¼ºÇÒ µğ·ºÅä¸®¿¡¼­, ¾Æ·¡ ¸í·É ¼öÇà
+2) ë¡œì»¬ ì €ì¥ì†Œ ìƒì„± - ìƒì„±í•  ë””ë ‰í† ë¦¬ì—ì„œ, ì•„ë˜ ëª…ë ¹ ìˆ˜í–‰
 $git init
 
-3) username°ú email µî·Ï
+3) usernameê³¼ email ë“±ë¡
 $git config --global user.name "KyuSahm"
 $git config --global user.email "gusami32@gmail.com"
 
-4) username°ú email È®ÀÎ
+4) usernameê³¼ email í™•ì¸
 $git config --global user.name
 $git config --global user.email
    
-5) ÇöÀç »óÅÂ È®ÀÎ - Ãß°¡ÇÒ ÆÄÀÏ ¶Ç´Â µğ·ºÅä¸® È®ÀÎ, º¯°æµÈ ÆÄÀÏ È®ÀÎ
+5) í˜„ì¬ ìƒíƒœ í™•ì¸ - ì¶”ê°€í•  íŒŒì¼ ë˜ëŠ” ë””ë ‰í† ë¦¬ í™•ì¸, ë³€ê²½ëœ íŒŒì¼ í™•ì¸
 $git status
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         cat.txt
         mouse
 
-6) ÆÄÀÏµéÀ» ÀúÀå¼Ò¿¡ Ãß°¡
-$git help add         // add ¸í·É¾î¿¡ ´ëÇÑ help
-$git add mouse      // mouse ÆÄÀÏ »õ·Î addÇÏ°Å³ª mouse ÆÄÀÏÀÌ º¯°æµÈ °æ¿ì¿¡µµ add
-$git add -A            // »õ·Î¿î ÆÄÀÏ Ãß°¡ ¶Ç´Â º¯°æµÈ ÆÄÀÏÀ» Ãß°¡
+6) íŒŒì¼ë“¤ì„ ì €ì¥ì†Œì— ì¶”ê°€
+$git help add         // add ëª…ë ¹ì–´ì— ëŒ€í•œ help
+$git add mouse      // mouse íŒŒì¼ ìƒˆë¡œ addí•˜ê±°ë‚˜ mouse íŒŒì¼ì´ ë³€ê²½ëœ ê²½ìš°ì—ë„ add
+$git add -A            // ìƒˆë¡œìš´ íŒŒì¼ ì¶”ê°€ ë˜ëŠ” ë³€ê²½ëœ íŒŒì¼ì„ ì¶”ê°€
 $git status             // check status
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
@@ -69,8 +69,8 @@ $ git status
 On branch master
 nothing to commit, working tree clean
 
-7) ÆÄÀÏµéÀ» »èÁ¦, ¼öÁ¤ Ãß°¡ ÈÄ ¹İ¿µ
-- cat.txt »èÁ¦, mouse ³»¿ë º¯°æ, penguin ÆÄÀÏ »ı¼º ÈÄ ÀÛ¾÷
+7) íŒŒì¼ë“¤ì„ ì‚­ì œ, ìˆ˜ì • ì¶”ê°€ í›„ ë°˜ì˜
+- cat.txt ì‚­ì œ, mouse ë‚´ìš© ë³€ê²½, penguin íŒŒì¼ ìƒì„± í›„ ì‘ì—…
 $ git status
 On branch master
 Changes not staged for commit:
@@ -98,11 +98,11 @@ $ git commit -m "Second Commit"
  delete mode 100644 cat.txt
  create mode 100644 penguin        
 
-8) git add ÆÄÀÏÀ» Ãë¼ÒÇÏ±â
+8) git add íŒŒì¼ì„ ì·¨ì†Œí•˜ê¸°
 git reset <file>
 git reset => cancel all added files
 
-8. È÷½ºÅä¸® ÃßÀû
+8. íˆìŠ¤í† ë¦¬ ì¶”ì 
 $ git log
 commit be2ff22a6dd7a56fe47e223fbfd5627af60a35c3 (HEAD -> master)
 Author: KyuSahm Kim <gusami32@gmail.com>
@@ -116,11 +116,11 @@ Date:   Mon Jul 19 15:50:19 2021 +0900
 
     First Commit
 
-$ git log -p    // --> ¼öÁ¤µÈ ÆÄÀÏ ¸ñ·Ï°ú ¼öÁ¤ ³»¿ëÀ» ¸ğµÎ º¸°í ½ÍÀº °æ¿ì
-$ git log -p -1 // --> ÃÖ±Ù ¸®ºñÀüÀÇ ¼öÁ¤µÈ ÆÄÀÏ ¸ñ·Ï°ú ¼öÁ¤ ³»¿ëÀ» ¸ğµÎ º¸°í ½ÍÀº °æ¿ì
-$ git log -p -2 // --> ÃÖ±Ù µÎ °³ÀÇ ¸®ºñÀüÀÇ ¼öÁ¤µÈ ÆÄÀÏ ¸ñ·Ï°ú ¼öÁ¤ ³»¿ëÀ» ¸ğµÎ º¸°í ½ÍÀº °æ¿ì
+$ git log -p    // --> ìˆ˜ì •ëœ íŒŒì¼ ëª©ë¡ê³¼ ìˆ˜ì • ë‚´ìš©ì„ ëª¨ë‘ ë³´ê³  ì‹¶ì€ ê²½ìš°
+$ git log -p -1 // --> ìµœê·¼ ë¦¬ë¹„ì „ì˜ ìˆ˜ì •ëœ íŒŒì¼ ëª©ë¡ê³¼ ìˆ˜ì • ë‚´ìš©ì„ ëª¨ë‘ ë³´ê³  ì‹¶ì€ ê²½ìš°
+$ git log -p -2 // --> ìµœê·¼ ë‘ ê°œì˜ ë¦¬ë¹„ì „ì˜ ìˆ˜ì •ëœ íŒŒì¼ ëª©ë¡ê³¼ ìˆ˜ì • ë‚´ìš©ì„ ëª¨ë‘ ë³´ê³  ì‹¶ì€ ê²½ìš°
 
-9. Æ¯Á¤ ¸®ºñÀüÀÇ ¼¼ºÎ »çÇ× º¸±â
+9. íŠ¹ì • ë¦¬ë¹„ì „ì˜ ì„¸ë¶€ ì‚¬í•­ ë³´ê¸°
 $ git show 7d7b8825d5d14ae460f8a6357d7c5a9495684705
 commit 7d7b8825d5d14ae460f8a6357d7c5a9495684705
 Author: KyuSahm Kim <gusami32@gmail.com>
@@ -145,35 +145,35 @@ index 0000000..4591066
 +name : jerry
 \ No newline at end of file
 
-10. °ú°Å·Î µ¹¾Æ°¡±â
-1) Æ¯Á¤ ½ÃÁ¡À¸·Î µ¹¾Æ°¡°í, ±× ÀÌÈÄÀÇ ÇàÀû Áö¿ì±â(º¹±¸ ºÒ°¡´É) 
-$ git reset 7d7b8825d5d14ae460f8a6357d7c5a9495684705 --hard // commit¾øÀÌ ¹Ù·Î µ¹¾Æ°¨
+10. ê³¼ê±°ë¡œ ëŒì•„ê°€ê¸°
+1) íŠ¹ì • ì‹œì ìœ¼ë¡œ ëŒì•„ê°€ê³ , ê·¸ ì´í›„ì˜ í–‰ì  ì§€ìš°ê¸°(ë³µêµ¬ ë¶ˆê°€ëŠ¥) 
+$ git reset 7d7b8825d5d14ae460f8a6357d7c5a9495684705 --hard // commitì—†ì´ ë°”ë¡œ ëŒì•„ê°
 HEAD is now at 7d7b882 First Commit
 
-2) Æ¯Á¤ revision µÇµ¹¸®±â
+2) íŠ¹ì • revision ë˜ëŒë¦¬ê¸°
 $ git revert 757d126d4eb38ef230d0607b847e39fcd3530378
-- VI Editor°¡ ¶ß¸é commit message¸¦ ¼öÁ¤ ÈÄ, ":wq"¸¦ ´©¸£¸é commitµÊ
+- VI Editorê°€ ëœ¨ë©´ commit messageë¥¼ ìˆ˜ì • í›„, ":wq"ë¥¼ ëˆ„ë¥´ë©´ commitë¨
 
-11. Branch ¸¸µé±â
-1) ÇöÀçÀÇ master branch¸¦ cloneÇØ¼­ TestGit_CloneÆú´õ¿¡  ¶Ç´Ù¸¥ master branch »ı¼º
+11. Branch ë§Œë“¤ê¸°
+1) í˜„ì¬ì˜ master branchë¥¼ cloneí•´ì„œ TestGit_Cloneí´ë”ì—  ë˜ë‹¤ë¥¸ master branch ìƒì„±
 $ git clone . /d/Workspace/TestGit_Clone/
 
-2) TestGit_Branch »ı¼º ¹× »èÁ¦
+2) TestGit_Branch ìƒì„± ë° ì‚­ì œ
 $ cd /d/Workspace/TestGit_Clone
-$ git branch TestGit_Branch      // branch »ı¼º
-$ git branch -d TestGit_Branch   // branch »èÁ¦
-$ git push -d origin TestGit_Branch2 // ¿ø°İ ÀúÀå¼ÒÀÇ branch Á¦°Å. "origin"ÀÇ ÀÌ¸§À» °¡Áø ¿ø°İ ÀúÀå¼ÒÀÇ "TestGit_Branch2" Á¦°Å
+$ git branch TestGit_Branch      // branch ìƒì„±
+$ git branch -d TestGit_Branch   // branch ì‚­ì œ
+$ git push -d origin TestGit_Branch2 // ì›ê²© ì €ì¥ì†Œì˜ branch ì œê±°. "origin"ì˜ ì´ë¦„ì„ ê°€ì§„ ì›ê²© ì €ì¥ì†Œì˜ "TestGit_Branch2" ì œê±°
 
-2) ÇöÀçÀÇ Branch Á¤º¸
+2) í˜„ì¬ì˜ Branch ì •ë³´
 $ git branch
   TestGit_Branch
-* master             // master branchÀÓ
+* master             // master branchì„
 
-3) master branch¿¡¼­ TestGit_Branch·Î ºê·£Ä¡ º¯°æ
+3) master branchì—ì„œ TestGit_Branchë¡œ ë¸Œëœì¹˜ ë³€ê²½
 $ git checkout TestGit_Branch
 Switched to branch 'TestGit_Branch'
 
-4) ºê·£Ä¡ÀÇ »ı¼º°ú º¯°æÀ» µ¿½Ã¿¡ ÇÏ±â
+4) ë¸Œëœì¹˜ì˜ ìƒì„±ê³¼ ë³€ê²½ì„ ë™ì‹œì— í•˜ê¸°
 $ git checkout -b TestGit_Branch2 => "git branch TestGit_Branch" + "git checkout TestGit_Branch2"
 Switched to a new branch 'TestGit_Branch2'
 
@@ -197,7 +197,7 @@ Date:   Mon Jul 19 15:50:19 2021 +0900
 
     First Commit
 
-4) ºê·£Ä¡¿¡¼­ ÀÛ¾÷
+4) ë¸Œëœì¹˜ì—ì„œ ì‘ì—…
 $ git status
 On branch TestGit_Branch
 Changes not staged for commit:
@@ -221,17 +221,17 @@ $ git commit -m "dinasour added"
  delete mode 100644 cat.txt
  create mode 100644 dinosaur
 
-5) TestGit_Branch branch¿¡¼­ master branch·Î º¯°æ
-$ git checkout master // option 1: master·Î ´Ù½Ã º¯°æ
+5) TestGit_Branch branchì—ì„œ master branchë¡œ ë³€ê²½
+$ git checkout master // option 1: masterë¡œ ë‹¤ì‹œ ë³€ê²½
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'
 
-$ cd /d/Workspace/TestGit // option 2: master¸¦ »ç¿ëÇÏ´Â Æú´õ·Î ÀÌµ¿
+$ cd /d/Workspace/TestGit // option 2: masterë¥¼ ì‚¬ìš©í•˜ëŠ” í´ë”ë¡œ ì´ë™
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
 $ git branch
 * master
 
-12. Branch MergeÇÏ±â
+12. Branch Mergeí•˜ê¸°
 $ cd /d/Workspace/TestGit_Clone/
 $ git checkout master
 Switched to branch 'master'
@@ -246,7 +246,7 @@ Fast-forward
  create mode 100644 dinosaur
 
 
-$ git log --graph --all --decorate // µÎ branchµé¿¡¼­ÀÇ ÀÛ¾÷À» ÇÑ´«¿¡ º¸±â
+$ git log --graph --all --decorate // ë‘ branchë“¤ì—ì„œì˜ ì‘ì—…ì„ í•œëˆˆì— ë³´ê¸°
 * commit 68e0081b35ff1ca40ef7db19b9ccd0ae1b099b4d (HEAD -> master, TestGit_Branch)
 | Author: KyuSahm Kim <gusami32@gmail.com>
 | Date:   Mon Jul 19 19:02:26 2021 +0900
@@ -271,15 +271,15 @@ $ git log --graph --all --decorate // µÎ branchµé¿¡¼­ÀÇ ÀÛ¾÷À» ÇÑ´«¿¡ º¸±â
 
       First Commit 
 
-13. Conflict ÇØ°áÇÏ±â(´Ù¸¥ branch¿¡¼­ µ¿ÀÏÇÑ ÆÄÀÏÀ» °íÄ£ ÈÄ, MergeÇÏ±â)      
-1) master branch¿¡¼­ dinasourÆÄÀÏ º¯°æ
+13. Conflict í•´ê²°í•˜ê¸°(ë‹¤ë¥¸ branchì—ì„œ ë™ì¼í•œ íŒŒì¼ì„ ê³ ì¹œ í›„, Mergeí•˜ê¸°)      
+1) master branchì—ì„œ dinasouríŒŒì¼ ë³€ê²½
 $ git status
-$ git add -A  // ÆÄÀÏ º¯°æ ÈÄ¿¡µµ add ¸í·ÉÀ» ¼öÇàÇØ¾ß ÇÔ.
+$ git add -A  // íŒŒì¼ ë³€ê²½ í›„ì—ë„ add ëª…ë ¹ì„ ìˆ˜í–‰í•´ì•¼ í•¨.
 $ git commit -m "dinasaur modi"
 [master 9d5fb1a] dinasaur modi
  1 file changed, 2 insertions(+), 1 deletion(-)
 
-2) TestGit_Branch branch¿¡¼­ dinasourÆÄÀÏ º¯°æ
+2) TestGit_Branch branchì—ì„œ dinasouríŒŒì¼ ë³€ê²½
 $ git checkout TestGit_Branch
 $ git status
 $ git add -A
@@ -287,58 +287,58 @@ $ git commit -m "dinasour sound"
 [TestGit_Branch 7f3fceb] dinasour sound
  1 file changed, 2 insertions(+), 1 deletion(-)
 
-3) master ºê·£Ä¡·Î µ¹¾Æ¿Í¼­ merge ¼öÇà(Ãæµ¹ ¹ß»ı)
+3) master ë¸Œëœì¹˜ë¡œ ëŒì•„ì™€ì„œ merge ìˆ˜í–‰(ì¶©ëŒ ë°œìƒ)
 $ git checkout master
 $ git merge TestGit_Branch
 Auto-merging dinosaur
 CONFLICT (content): Merge conflict in dinosaur
 Automatic merge failed; fix conflicts and then commit the result 
-$ ÆË¾÷µÈ ÆíÁı±â È­¸é¿¡¼­ Ãæµ¹À» ÇØ¼ÒÇÑ ÈÄ, ÀúÀå
+$ íŒì—…ëœ í¸ì§‘ê¸° í™”ë©´ì—ì„œ ì¶©ëŒì„ í•´ì†Œí•œ í›„, ì €ì¥
 $ git add -A
 $ git commit -m "merged branch"
 
-14. RebaseÇÏ±â(Reapply commits on top of another base tip)
-$ git rebase TestGit_Branch // TestGit_BranchÀÇ ³»¿ëÀ» °¡Á®¿À±â
+14. Rebaseí•˜ê¸°(Reapply commits on top of another base tip)
+$ git rebase TestGit_Branch // TestGit_Branchì˜ ë‚´ìš©ì„ ê°€ì ¸ì˜¤ê¸°
 
-15. LocalÀÇ ¼öÁ¤À» Ãë¼ÒÇÏ±â
-$ git checkout -- dinosaur // ¼öÁ¤µÈ dinosaurÆÄÀÏÀ» ¿ø·¡´ë·Î µÇµ¹¸².
+15. Localì˜ ìˆ˜ì •ì„ ì·¨ì†Œí•˜ê¸°
+$ git checkout -- dinosaur // ìˆ˜ì •ëœ dinosauríŒŒì¼ì„ ì›ë˜ëŒ€ë¡œ ë˜ëŒë¦¼.
 
-16. LocalÀÇ ¼öÁ¤µÈ ÆÄÀÏÀÇ ³»¿ë È®ÀÎÇÏ±â
+16. Localì˜ ìˆ˜ì •ëœ íŒŒì¼ì˜ ë‚´ìš© í™•ì¸í•˜ê¸°
 $ git diff src/main/webapp/WEB-INF/web.xml
 
-17. ÆÄÀÏÀ» Repository¿¡¼­ °ü¸®ÇÏÁö ¾Êµµ·Ï ÇÏ±â
-$ git rm --cached .settings/* // .settings¾Æ·¡ÀÇ ¸ğµåÆÄÀÏ Á¦°Å
+17. íŒŒì¼ì„ Repositoryì—ì„œ ê´€ë¦¬í•˜ì§€ ì•Šë„ë¡ í•˜ê¸°
+$ git rm --cached .settings/* // .settingsì•„ë˜ì˜ ëª¨ë“œíŒŒì¼ ì œê±°
 $ git rm --cached *.class
 $ git rm --cached target/m2e-wtp/web-resources/META-INF/maven/com.newlecture/webprj/pom.properties
 
-18. Github¿¡¼­ Repository »ı¼º
-1) "https://github.com/"¿¡ ·Î±×ÀÎ ÈÄ, È­¸é ¿ŞÂÊ¿¡ À§Ä¡ÇÑ "Create repository" Å¬¸¯
-2) "Repository name"À» ÀÔ·Â => "github-pratice"¸¦ Å×½ºÆ®·Î ÀÔ·Â
-3) "Description (optional)"À» ÀÔ·Â => "GitHub »ç¿ë ¿¬½À"ÀÌ¶ó°í, ÀÔ·Â
-4) "public" or "private" Áß¿¡ ¼±ÅÃ
-   public => ¸ğµç »ç¿ëÀÚ¿¡°Ô ¼Ò½º ÄÚµå °ø°³
-   private => ¼Ò½º ÄÚµå ºñ°ø°³. ³ª ±×¸®°í ³»°¡ ÀÌ Repository¿¡ ÃÊ´ëÇÑ »ç¿ëÀÚµéÇÑÅ×¸¸ °ø°³
-5) "Initialize this repository with"Àº ·ÎÄÃ¿¡ repository¸¦ »ç¿ëÇÏ°í ÀÖÁö ¾Ê´Ù°¡, GitHub»ó¿¡¼­ ¸¸µå´Â °æ¿ì¿¡¸¸ »ç¿ë.
-6) "Create Repository" ¹öÆ°À» ÀÌ¿ëÇØ¼­ »ı¼º
-7) ´ÙÀ½È­¸é¿¡¼­ ¾Æ·¡ÀÇ Á¢¼Ó Á¤º¸¸¦ È®ÀÎ °¡´É
+18. Githubì—ì„œ Repository ìƒì„±
+1) "https://github.com/"ì— ë¡œê·¸ì¸ í›„, í™”ë©´ ì™¼ìª½ì— ìœ„ì¹˜í•œ "Create repository" í´ë¦­
+2) "Repository name"ì„ ì…ë ¥ => "github-pratice"ë¥¼ í…ŒìŠ¤íŠ¸ë¡œ ì…ë ¥
+3) "Description (optional)"ì„ ì…ë ¥ => "GitHub ì‚¬ìš© ì—°ìŠµ"ì´ë¼ê³ , ì…ë ¥
+4) "public" or "private" ì¤‘ì— ì„ íƒ
+   public => ëª¨ë“  ì‚¬ìš©ìì—ê²Œ ì†ŒìŠ¤ ì½”ë“œ ê³µê°œ
+   private => ì†ŒìŠ¤ ì½”ë“œ ë¹„ê³µê°œ. ë‚˜ ê·¸ë¦¬ê³  ë‚´ê°€ ì´ Repositoryì— ì´ˆëŒ€í•œ ì‚¬ìš©ìë“¤í•œí…Œë§Œ ê³µê°œ
+5) "Initialize this repository with"ì€ ë¡œì»¬ì— repositoryë¥¼ ì‚¬ìš©í•˜ê³  ìˆì§€ ì•Šë‹¤ê°€, GitHubìƒì—ì„œ ë§Œë“œëŠ” ê²½ìš°ì—ë§Œ ì‚¬ìš©.
+6) "Create Repository" ë²„íŠ¼ì„ ì´ìš©í•´ì„œ ìƒì„±
+7) ë‹¤ìŒí™”ë©´ì—ì„œ ì•„ë˜ì˜ ì ‘ì† ì •ë³´ë¥¼ í™•ì¸ ê°€ëŠ¥
    https => https://github.com/KyuSahm/github-pratice.git
    ssh => git@github.com:KyuSahm/github-pratice.git
 
-19. GitHub¿Í ¿¬µ¿ÇÏ±â
-1) Local¿¡¼­ master branchÀÇ »óÅÂ Á¤º¸ È®ÀÎ
+19. GitHubì™€ ì—°ë™í•˜ê¸°
+1) Localì—ì„œ master branchì˜ ìƒíƒœ ì •ë³´ í™•ì¸
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
 $ git status
 On branch master
 nothing to commit, working tree clean
 
-2) ¿¬°áµÈ Remote Repository(GitHub) È®ÀÎ
+2) ì—°ê²°ëœ Remote Repository(GitHub) í™•ì¸
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
-$ git remote => ¿¬°á¾ÈµÊ.
+$ git remote => ì—°ê²°ì•ˆë¨.
 
-3) ¿ø°İ ÀúÀå¼Ò »ı¼º ÈÄ, ·ÎÄÃ ÀúÀå¼ÒÀÇ º¯°æ ³»¿ëµéÀ» ·ÎµåÇÏ±â
-$ git remote add origin https://github.com/KyuSahm/github-pratice.git => ¿ø°İ ÀúÀå¼Ò "https://github.com/KyuSahm/github-pratice.git"¸¦ "origin"À¸·Î »ç¿ëÇÏ°Ú´Ù´Â Ç¥½Ã
-$ git branch -M main => ·ÎÄÃÀÇ ÇöÀç branch¸¦ main ºê·£Ä¡·Î ÀÌ¸§ º¯°æ
-$ git push -u origin main => ·ÎÄÃ Æú´õÀÇ º¯°æ ³»¿ëµéÀ» ¿ø°İ "origin"ÀÇ main branch¿¡ pushÇÏ°Ú´Ù´Â Ç¥½Ã
+3) ì›ê²© ì €ì¥ì†Œ ìƒì„± í›„, ë¡œì»¬ ì €ì¥ì†Œì˜ ë³€ê²½ ë‚´ìš©ë“¤ì„ ë¡œë“œí•˜ê¸°
+$ git remote add origin https://github.com/KyuSahm/github-pratice.git => ì›ê²© ì €ì¥ì†Œ "https://github.com/KyuSahm/github-pratice.git"ë¥¼ "origin"ìœ¼ë¡œ ì‚¬ìš©í•˜ê² ë‹¤ëŠ” í‘œì‹œ
+$ git branch -M main => ë¡œì»¬ì˜ í˜„ì¬ branchë¥¼ main ë¸Œëœì¹˜ë¡œ ì´ë¦„ ë³€ê²½
+$ git push -u origin main => ë¡œì»¬ í´ë”ì˜ ë³€ê²½ ë‚´ìš©ë“¤ì„ ì›ê²© "origin"ì˜ main branchì— pushí•˜ê² ë‹¤ëŠ” í‘œì‹œ
 info: please complete authentication in your browser...
 Enumerating objects: 10, done.
 Counting objects: 100% (10/10), done.
@@ -351,12 +351,12 @@ To https://github.com/KyuSahm/github-pratice.git
  * [new branch]      main -> main
 Branch 'main' set up to track remote branch 'master' from 'origin'.
 
-$ git remote => "origin"°ú ¿¬°á È®ÀÎ
+$ git remote => "origin"ê³¼ ì—°ê²° í™•ì¸
 origin
 
-cf) $ git remote remove origin => ¿ø°İ ÀúÀå¼Ò Á¦°Å
+cf) $ git remote remove origin => ì›ê²© ì €ì¥ì†Œ ì œê±°
 
-4) ·ÎÄÃ º¯°æ ÈÄ, GitHub¿¡ PushÇÏ±â - ·ÎÄÃ¿¡ dog.txt »ı¼ºÇØ¼­ ÅØ½ºÆ® ÀÔ·Â
+4) ë¡œì»¬ ë³€ê²½ í›„, GitHubì— Pushí•˜ê¸° - ë¡œì»¬ì— dog.txt ìƒì„±í•´ì„œ í…ìŠ¤íŠ¸ ì…ë ¥
 $ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -368,16 +368,16 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
-$ git add -A  => ·ÎÄÃ¿¡ º¯°æ Ãß°¡
+$ git add -A  => ë¡œì»¬ì— ë³€ê²½ ì¶”ê°€
 
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
-$ git commit -m "dog.txt added" => ·ÎÄÃ¿¡ Ä¿¹Ô Ã³¸®
+$ git commit -m "dog.txt added" => ë¡œì»¬ì— ì»¤ë°‹ ì²˜ë¦¬
 [master d80ae2b] dog.txt added 
  1 file changed, 1 insertion(+)
  create mode 100644 dog.txt    
 
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
-$ git push origin master => GitHub¿¡ µ¿±âÈ­. GitHub¿¡¼­ º¯°æ³»¿ë È®ÀÎ °¡´É
+$ git push origin master => GitHubì— ë™ê¸°í™”. GitHubì—ì„œ ë³€ê²½ë‚´ìš© í™•ì¸ ê°€ëŠ¥
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 12 threads
@@ -387,11 +387,11 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/KyuSahm/github-pratice.git
    03214a3..d80ae2b  master -> master
 
-20. ".gitignore" ÆÄÀÏ »ç¿ëÇÏ±â
-1) »ó¼¼ÇÑ ³»¿ëÀº ¾Æ·¡ ÆäÀÌÁö¿¡¼­ È®ÀÎ
+20. ".gitignore" íŒŒì¼ ì‚¬ìš©í•˜ê¸°
+1) ìƒì„¸í•œ ë‚´ìš©ì€ ì•„ë˜ í˜ì´ì§€ì—ì„œ í™•ì¸
 https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
-2) "secrete-animal.txt"ÆÄÀÏ°ú ".gitignore" ÆÄÀÏ »ı¼º
+2) "secrete-animal.txt"íŒŒì¼ê³¼ ".gitignore" íŒŒì¼ ìƒì„±
 $ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -403,7 +403,7 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-3) ".gitignore" ÆÄÀÏ¿¡ "secrete-animal.txt" ³»¿ë Ãß°¡ ÈÄ, ·ÎÄÃ Ä¿¹Ô ¹× GitHub¿¡ Push
+3) ".gitignore" íŒŒì¼ì— "secrete-animal.txt" ë‚´ìš© ì¶”ê°€ í›„, ë¡œì»¬ ì»¤ë°‹ ë° GitHubì— Push
 $ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -435,12 +435,12 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/KyuSahm/github-pratice.git
    d80ae2b..1b0f322  master -> master
 
-21. Private Remote Repository¿¡¼­ »ç¿ëÀÚ ÃÊ´ëÇÏ±â
-- ÇØ´ç Repository ¼±ÅÃ > Setting ¸Ş´º ¼±ÅÃ > Collaborators ¸Ş´º ¼±ÅÃ > Add collaborator
+21. Private Remote Repositoryì—ì„œ ì‚¬ìš©ì ì´ˆëŒ€í•˜ê¸°
+- í•´ë‹¹ Repository ì„ íƒ > Setting ë©”ë‰´ ì„ íƒ > Collaborators ë©”ë‰´ ì„ íƒ > Add collaborator
 
-22. GitHubÀÇ Remote Repository¸¦ CloneÇØ¼­ º»ÀÎÀÇ ·ÎÄÃ ÀúÀå¼Ò¿¡¼­ ÀÛ¾÷ÇÏ±â
-1) GitHubÀÇ Remote RepositoryÀÇ "Code" ¹öÆ°À» Å¬¸¯ÇØ¼­ URLÀ» º¹»çÇØ ¿È
-2) ·ÎÄÃÀÇ »õ·Î¿î µğ·ºÅä¸®("D:\Workspace\MyPractice")¸¦ »ı¼ºÇÑ ÈÄ, ±× ¾Æ·¡¿¡¼­ Git Bash¸¦ ¿­°í ¾Æ·¡ÀÇ ¸í·É¾î »ğÀÔ
+22. GitHubì˜ Remote Repositoryë¥¼ Cloneí•´ì„œ ë³¸ì¸ì˜ ë¡œì»¬ ì €ì¥ì†Œì—ì„œ ì‘ì—…í•˜ê¸°
+1) GitHubì˜ Remote Repositoryì˜ "Code" ë²„íŠ¼ì„ í´ë¦­í•´ì„œ URLì„ ë³µì‚¬í•´ ì˜´
+2) ë¡œì»¬ì˜ ìƒˆë¡œìš´ ë””ë ‰í† ë¦¬("D:\Workspace\MyPractice")ë¥¼ ìƒì„±í•œ í›„, ê·¸ ì•„ë˜ì—ì„œ Git Bashë¥¼ ì—´ê³  ì•„ë˜ì˜ ëª…ë ¹ì–´ ì‚½ì…
 $ git clone https://github.com/KyuSahm/github-pratice.git
 Cloning into 'github-pratice'...
 remote: Enumerating objects: 16, done.
@@ -450,12 +450,12 @@ remote: Total 16 (delta 3), reused 15 (delta 2), pack-reused 0
 Receiving objects: 100% (16/16), done.
 Resolving deltas: 100% (3/3), done
 
-3) Æú´õ ÀÌµ¿
-$ cd github-pratice/ => Æú´õ ÀÌµ¿
+3) í´ë” ì´ë™
+$ cd github-pratice/ => í´ë” ì´ë™
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
 
-4) ÇöÀç±îÁöÀÇ º¯°æ È®ÀÎ
-$ git log => ÇöÀç±îÁöÀÇ º¯°æ ³»¿ë È®ÀÎ
+4) í˜„ì¬ê¹Œì§€ì˜ ë³€ê²½ í™•ì¸
+$ git log => í˜„ì¬ê¹Œì§€ì˜ ë³€ê²½ ë‚´ìš© í™•ì¸
 commit 1b0f3223d4294d1d6c57338dae00cd2ffca9c532 (HEAD -> master, origin/master, origin/HEAD)
 Author: KyuSahm <gusami32@gmail.com>
 Date:   Tue Aug 3 15:49:00 2021 +0900
@@ -483,7 +483,7 @@ Date:   Mon Jul 19 18:30:01 2021 +0900
 commit 7d7b8825d5d14ae460f8a6357d7c5a9495684705
 Author: KyuSahm Kim <gusami32@gmail.com>
 
-5) »õ·Î¿î ÆÄÀÏ("human.txt")¸¦ Ãß°¡ÇÑ ÈÄ, ·ÎÄÃ Ä¿¹Ô ÈÄ, GitHub¿¡ Push
+5) ìƒˆë¡œìš´ íŒŒì¼("human.txt")ë¥¼ ì¶”ê°€í•œ í›„, ë¡œì»¬ ì»¤ë°‹ í›„, GitHubì— Push
 $ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -504,7 +504,7 @@ $ git commit -m "human.txt added"
  create mode 100644 human.txt
 
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
-$ git push origin master => GitHub¿¡¼­ È®ÀÎ °¡´É
+$ git push origin master => GitHubì—ì„œ í™•ì¸ ê°€ëŠ¥
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 12 threads
@@ -515,8 +515,8 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/KyuSahm/github-pratice.git
    1b0f322..def1189  master -> master
 
-23. GitHubÀÇ ÃÖ½Å³»¿ëÀ» °¡Á®¿À±â
-1) fetch ¸í·ÉÀ» ÅëÇØ GitHubÀÇ ÃÖ½Å »óÅÂ Á¤º¸ °¡Á®¿À±â
+23. GitHubì˜ ìµœì‹ ë‚´ìš©ì„ ê°€ì ¸ì˜¤ê¸°
+1) fetch ëª…ë ¹ì„ í†µí•´ GitHubì˜ ìµœì‹  ìƒíƒœ ì •ë³´ ê°€ì ¸ì˜¤ê¸°
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
 $ git fetch
 remote: Enumerating objects: 4, done.
@@ -527,16 +527,16 @@ Unpacking objects: 100% (3/3), 254 bytes | 28.00 KiB/s, done.
 From https://github.com/KyuSahm/github-pratice
    1b0f322..def1189  master     -> origin/master
 
-2) ·ÎÄÃ°ú GitHub¿ÍÀÇ »óÅÂ ºñ±³
+2) ë¡œì»¬ê³¼ GitHubì™€ì˜ ìƒíƒœ ë¹„êµ
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
 $ git status
 On branch master
-Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded. => ÇöÀç ¼­¹ö º¸´Ù ÇÑ°³ÀÇ commit°¡ µÚÃÄÁ³´Ù´Â Á¤º¸
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded. => í˜„ì¬ ì„œë²„ ë³´ë‹¤ í•œê°œì˜ commitê°€ ë’¤ì³ì¡Œë‹¤ëŠ” ì •ë³´
   (use "git pull" to update your local branch)
 
 nothing to commit, working tree clean
 
-3) GitHubÀÇ ÃÖ½Å ÆÄÀÏ °¡Á®¿À±â
+3) GitHubì˜ ìµœì‹  íŒŒì¼ ê°€ì ¸ì˜¤ê¸°
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
 $ git pull origin master
 From https://github.com/KyuSahm/github-pratice
@@ -547,12 +547,12 @@ Fast-forward
  1 file changed, 1 insertion(+)
  create mode 100644 human.txt
 
-24. ºê·£Ä¡ ³»¿ë ÁÖ°í ¹Ş±â
-1) ºê·£Ä¡ÀÇ »ı¼º°ú º¯°æÀ» µ¿½Ã¿¡ ÇÏ±â
+24. ë¸Œëœì¹˜ ë‚´ìš© ì£¼ê³  ë°›ê¸°
+1) ë¸Œëœì¹˜ì˜ ìƒì„±ê³¼ ë³€ê²½ì„ ë™ì‹œì— í•˜ê¸°
 $ git checkout -b TestGit_Branch2 => "git branch TestGit_Branch" + "git checkout TestGit_Branch2"
 Switched to a new branch 'TestGit_Branch2'
 
-2) "TestGit_Branch2" ºê·£Ä¡¿¡¼­ "tiger"ÆÄÀÏ »èÁ¦ÇÏ°í, "dinosaur.txt" ÆÄÀÏ Ãß°¡
+2) "TestGit_Branch2" ë¸Œëœì¹˜ì—ì„œ "tiger"íŒŒì¼ ì‚­ì œí•˜ê³ , "dinosaur.txt" íŒŒì¼ ì¶”ê°€
 $ git status
 On branch TestGit_Branch2
 Changes not staged for commit:
@@ -576,14 +576,14 @@ $ git commit -m "tiger removed and dinosaur added"
  create mode 100644 dinosaur.txt
  delete mode 100644 tiger
 
-3) GitHub¿¡ ºê·£Ä¡ »ı¼ºÇÏ±â
+3) GitHubì— ë¸Œëœì¹˜ ìƒì„±í•˜ê¸°
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (TestGit_Branch2)
-$ git branch => ÇöÀçÀÇ ·ÎÄÃ branch Á¤º¸
+$ git branch => í˜„ì¬ì˜ ë¡œì»¬ branch ì •ë³´
 * TestGit_Branch2
   master
 
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (TestGit_Branch2)
-$ git push origin TestGit_Branch2 => GitHub¿¡ "TestGit_Branch2" ºê·£Ä¡ »ı¼º. GitHub¿¡¼­ ¿©·¯ ºê·£Ä¡ Áß ÇÏ³ª¸¦ ¼±ÅÃ °¡´É
+$ git push origin TestGit_Branch2 => GitHubì— "TestGit_Branch2" ë¸Œëœì¹˜ ìƒì„±. GitHubì—ì„œ ì—¬ëŸ¬ ë¸Œëœì¹˜ ì¤‘ í•˜ë‚˜ë¥¼ ì„ íƒ ê°€ëŠ¥
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 12 threads
@@ -598,19 +598,19 @@ remote:
 To https://github.com/KyuSahm/github-pratice.git
  * [new branch]      TestGit_Branch2 -> TestGit_Branch2
 
-4) ·ÎÄÃ°ú ¿ø°İÀÇ ¸ğµç Branch Á¤º¸ º¸±â
+4) ë¡œì»¬ê³¼ ì›ê²©ì˜ ëª¨ë“  Branch ì •ë³´ ë³´ê¸°
 $ git branch -a
 * TestGit_Branch2
   master
   remotes/origin/TestGit_Branch2
   remotes/origin/master
 
-5) ¿ø°İ(GitHub)ÀÇ Branch¸¦ °¡Á®¿Í¼­ ·ÎÄÃ¿¡ Branch »ı¼º ÈÄ, ÀüÈ¯ ÇÏ±â
-$ git branch => ·ÎÄÃ ºê·£Ä¡ Á¤º¸ È®ÀÎ
+5) ì›ê²©(GitHub)ì˜ Branchë¥¼ ê°€ì ¸ì™€ì„œ ë¡œì»¬ì— Branch ìƒì„± í›„, ì „í™˜ í•˜ê¸°
+$ git branch => ë¡œì»¬ ë¸Œëœì¹˜ ì •ë³´ í™•ì¸
 * master
 
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
-$ git checkout -b TestGit_Branch3 remotes/origin/TestGit_Branch2  => ¿ø°İÀÇ "remotes/origin/TestGit_Branch2"¸¦ °¡Á®¿Í¼­ ·ÎÄÃ ºê·£Ä¡ "TestGit_Branch3" »ı¼º ÈÄ, º¯°æ
+$ git checkout -b TestGit_Branch3 remotes/origin/TestGit_Branch2  => ì›ê²©ì˜ "remotes/origin/TestGit_Branch2"ë¥¼ ê°€ì ¸ì™€ì„œ ë¡œì»¬ ë¸Œëœì¹˜ "TestGit_Branch3" ìƒì„± í›„, ë³€ê²½
 Switched to a new branch 'TestGit_Branch3'
 Branch 'TestGit_Branch3' set up to track remote branch 'TestGit_Branch2' from 'origin'.
 
@@ -619,8 +619,8 @@ $ git branch
 * TestGit_Branch3
   master
 
-25. Ãæµ¹(Conflict) ÇØ°áÇÏ±â
-1) Machine A¿¡¼­ master branchÀÇ "cat.txt" ÆÄÀÏ ¼öÁ¤ ÈÄ, ¿ø°İ¿¡ Push
+25. ì¶©ëŒ(Conflict) í•´ê²°í•˜ê¸°
+1) Machine Aì—ì„œ master branchì˜ "cat.txt" íŒŒì¼ ìˆ˜ì • í›„, ì›ê²©ì— Push
 $ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -652,7 +652,7 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/KyuSahm/github-pratice.git
    def1189..7e22f28  master -> master
 
-2) Machine B¿¡¼­ ÃÖ½Å ³»¿ëÀ» PullÇÏÁö ¾Ê°í, master branchÀÇ "cat.txt" ÆÄÀÏ ¼öÁ¤ ÈÄ, ¿ø°İ¿¡ Push½Ãµµ
+2) Machine Bì—ì„œ ìµœì‹  ë‚´ìš©ì„ Pullí•˜ì§€ ì•Šê³ , master branchì˜ "cat.txt" íŒŒì¼ ìˆ˜ì • í›„, ì›ê²©ì— Pushì‹œë„
 $ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -673,7 +673,7 @@ $ git commit -m "cat name changed by another man"
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
-$ git push origin master => Ãæµ¹¿¡ ÀÇÇØ¼­ Push°¡ µÇÁö ¾ÊÀ½.
+$ git push origin master => ì¶©ëŒì— ì˜í•´ì„œ Pushê°€ ë˜ì§€ ì•ŠìŒ.
 To https://github.com/KyuSahm/github-pratice.git
  ! [rejected]        master -> master (fetch first)
 error: failed to push some refs to 'https://github.com/KyuSahm/github-pratice.git'    
@@ -683,8 +683,8 @@ hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
-3) Machine B¿¡¼­ ÃÖ½Å ³»¿ëÀ» PullÇÏ¸é Ãæµ¹ ÇØ°áÀ» À§ÇØ Editor Ã¢ÀÌ ¶ä.
-$ git pull => ÆíÁı±â¿¡¼­ conflict ¼Ò½º ÇØ°á
+3) Machine Bì—ì„œ ìµœì‹  ë‚´ìš©ì„ Pullí•˜ë©´ ì¶©ëŒ í•´ê²°ì„ ìœ„í•´ Editor ì°½ì´ ëœ¸.
+$ git pull => í¸ì§‘ê¸°ì—ì„œ conflict ì†ŒìŠ¤ í•´ê²°
 Auto-merging cat.txt
 CONFLICT (content): Merge conflict in cat.txt
 Automatic merge failed; fix conflicts and then commit the result.
@@ -693,11 +693,11 @@ gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master|MER
 $ git add -A
 
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master|MERGING) 
-$ git commit => ¸Ş¼¼Áö ¾øÀÌ ÀÔ·ÂÇÏ¸é ÀÚµ¿À¸·Î Ãæµ¹°ú °ü·ÃµÈ ¸Ş½ÃÁöµéÀÌ ¶á´Ù. wq¸¦ ÀÌ¿ëÇØ¼­ ÀúÀåÇÏ¸é CommitµÊ.
+$ git commit => ë©”ì„¸ì§€ ì—†ì´ ì…ë ¥í•˜ë©´ ìë™ìœ¼ë¡œ ì¶©ëŒê³¼ ê´€ë ¨ëœ ë©”ì‹œì§€ë“¤ì´ ëœ¬ë‹¤. wqë¥¼ ì´ìš©í•´ì„œ ì €ì¥í•˜ë©´ Commitë¨.
 [master 5df7a47] Merge branch 'master' of https://github.com/KyuSahm/github-pratice
 
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/MyPractice/github-pratice (master)
-$ git push => ¿ø°İ¿¡ Push
+$ git push => ì›ê²©ì— Push
 Enumerating objects: 11, done.
 Counting objects: 100% (11/11), done.
 Delta compression using up to 12 threads
@@ -708,15 +708,15 @@ remote: Resolving deltas: 100% (2/2), completed with 1 local object.
 To https://github.com/KyuSahm/github-pratice.git
    7e22f28..5df7a47  master -> master
 
-26. ¿ø°İ ºê·£Ä¡ Á¦°Å
-$ git branch -a => ·ÎÄÃ ¹× ¿ø°İ ºê·£Ä¡ Á¤º¸
+26. ì›ê²© ë¸Œëœì¹˜ ì œê±°
+$ git branch -a => ë¡œì»¬ ë° ì›ê²© ë¸Œëœì¹˜ ì •ë³´
   TestGit_Branch2
 * master
   remotes/origin/TestGit_Branch2
   remotes/origin/master
 
 gusam@DESKTOP-RF6D56E MINGW64 /d/Workspace/TestGit (master)
-$ git push -d origin TestGit_Branch2 => "origin"ÀÇ ÀÌ¸§À» °¡Áø ¿ø°İ ÀúÀå¼ÒÀÇ "TestGit_Branch2" Á¦°Å
+$ git push -d origin TestGit_Branch2 => "origin"ì˜ ì´ë¦„ì„ ê°€ì§„ ì›ê²© ì €ì¥ì†Œì˜ "TestGit_Branch2" ì œê±°
 To https://github.com/KyuSahm/github-pratice.git
  - [deleted]         TestGit_Branch2
 
@@ -726,10 +726,10 @@ $ git branch -a
 * master
   remotes/origin/master
 
-27. Git Commit ¸Ş½ÃÁö ÀÛ¼º¹ı
-1) Google¿¡¼­ "Git Commit ¸Ş½ÃÁö ÀÛ¼º¹ı"À» °Ë»ö
-2) Âü°í »çÀÌÆ®: https://beomseok95.tistory.com/328
+27. Git Commit ë©”ì‹œì§€ ì‘ì„±ë²•
+1) Googleì—ì„œ "Git Commit ë©”ì‹œì§€ ì‘ì„±ë²•"ì„ ê²€ìƒ‰
+2) ì°¸ê³  ì‚¬ì´íŠ¸: https://beomseok95.tistory.com/328
 
 28. Git Remote and Local Branch Renaming
-1) GitHubÀÇ ÇØ´ç Repository > Setting > Branches > ¼öÁ¤¹öÆ°
-2) LocalÀÇ °æ¿ì => $ git branch -M main => ·ÎÄÃÀÇ ÇöÀç branch¸¦ main ºê·£Ä¡·Î ÀÌ¸§ º¯°æ
+1) GitHubì˜ í•´ë‹¹ Repository > Setting > Branches > ìˆ˜ì •ë²„íŠ¼
+2) Localì˜ ê²½ìš° => $ git branch -M main => ë¡œì»¬ì˜ í˜„ì¬ branchë¥¼ main ë¸Œëœì¹˜ë¡œ ì´ë¦„ ë³€ê²½
